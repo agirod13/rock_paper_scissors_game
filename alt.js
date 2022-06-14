@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8"></meta>
-        <title>Rock, Paper, Scissors</title>
-    </head>
-    <body>
-        <script>
+
             let playerScore = 0;
             let botScore = 0;
             const getUserChoice = () => {
@@ -72,13 +65,10 @@
             };
                 
             
-            const game = () => {
-                for (let i = 0; i < 5; i++) {
-                    playRound();
-                }
-            };
+            // const game = () => {
+            //     for (let i = 0; i < 5; i++) {
+            //         playRound();
+            //     }
+            // };
 
-            game();            
-        </script>
-    </body>
-</html>
+            // game();            
