@@ -78,6 +78,15 @@
                 for (let i = 0; i < 5; i++) {
                     playRound();
                 }
+                if (botScore > playerScore){
+                    console.log("BOT WINS THE GAME!");
+                }
+                if (playerScore > botScore){
+                    console.log("PLAYER WINS THE GAME!");
+                }
+                if (playerScore === botScore){
+                    console.log("IT'S A TIE GAME!");
+                }
             };
 
             game();            
