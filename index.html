@@ -37,28 +37,22 @@
                 if (userChoice === "rock") {
                     if (computerChoice === "paper") {
                         return "Bot wins!";
-                        botScore++;
                     } else {
                         return "You win!";
-                        playerScore++;
                     }
                 };
                 if (userChoice === "paper") {
                     if (computerChoice === "scissors") {
                         return "Bot wins!";
-                        botScore++;
                     } else {
                         return "You win!";
-                        playerScore++;
                     }
                 };
                 if (userChoice === "scissors") {
                     if (computerChoice === "rock") {
                         return "Bot wins!";
-                        botScore++;
                     } else {
                         return "You win!";
-                        playerScore++;
                     }
                 };
             };
@@ -69,8 +63,16 @@
                 console.log('You threw: ' + userChoice);
                 console.log('Computer threw: ' + computerChoice);
                 console.log(determineWinner(userChoice, computerChoice));
+                if(determineWinner(userChoice,computerChoice) === "Bot wins!") {
+                        botScore++;
+                }
+                if(determineWinner(userChoice,computerChoice) === "You win!"){
+                        playerScore++;
+                }
+                console.log(`Bot has a score of ${botScore}, Player has a score of ${playerScore}`)
             };
-                
+            
+            playRound();
             
             const game = () => {
                 for (let i = 0; i < 5; i++) {
